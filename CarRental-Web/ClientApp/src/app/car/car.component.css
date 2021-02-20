@@ -72,3 +72,10 @@
 
     text-align: center;
 }
+.search-car {
+ text-align: center;
+ margin-bottom: 0px;
+}
+input{
+  width:300px;
+}

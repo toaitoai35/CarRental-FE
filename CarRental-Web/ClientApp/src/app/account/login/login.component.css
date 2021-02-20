@@ -1,6 +1,7 @@
 
 .card{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.247),rgba(0, 0, 0, 0.247)), url(../../assets/img/hero_1.jpg);
+
+    background-image:linear-gradient(rgba(0, 0, 0, 0.247),rgba(0, 0, 0, 0.247)), url(../../../assets/img/hero_1.jpg);
     height: 620px;
     opacity: 0.9;
 }
@@ -26,7 +27,7 @@
 
 }
 h2{
-    color: #ffffff;
+    color: #fff;
     margin-left: -10px !important;
     margin-bottom: 20px !important;
     font-family: 'Poppins', sans-serif;
@@ -46,7 +47,6 @@ h3{
     font-family: 'Poppins', sans-serif;
     border-radius: 27px;
     padding-left: 30px;
-    margin-top: 10px;
 }
 .btn-submit{
     border: none;

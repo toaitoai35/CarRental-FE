@@ -10,8 +10,8 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { ContentHomepageComponent } from './home/content-homepage/content-homepage.component';
 import { FooterComponent } from './footer/footer.component';
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
+
+import { RegisterComponent } from './account/register/register.component';
 import { OverviewComponent } from './overview/overview.component';
 import { CarComponent } from './car/car.component';
 import { CarPage2Component } from './car/car-page2/car-page2.component';
@@ -21,6 +21,9 @@ import { ContactComponent } from './contact/contact.component';
 import { BookingComponent } from './booking/booking.component';
 import { AboutComponent } from './about/about.component';
 import { CarDetailComponent } from './car-detail/car-detail.component';
+import { AdminComponent } from './admin/admin.component';
+import { LoginComponent } from './account/login/login.component';
+
 
 const appRoutes : Routes = [
   { path:'', component: HomeComponent},
@@ -60,7 +63,8 @@ const appRoutes : Routes = [
     ContactComponent,
     BookingComponent,
     AboutComponent,
-    CarDetailComponent
+    CarDetailComponent,
+    AdminComponent
   ],
   
   imports: [
