@@ -1,0 +1,51 @@
+<!--Header-->
+<app-header></app-header>
+
+  <div class="banner">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-7 content1">
+          <h1>It's Time To Booking Your Car Today</h1>
+          <br>
+          <p>Every day, thousands of people trust us to find them the perfect hire car at the best price.
+            Flexible bookings. Enhanced cleaning.
+          </p>
+          <br>
+          <a href="#" class="btn-started">GET STARTED</a>
+        </div>
+        <div class="col-sm-4 col-md-5 table1">
+          
+          <h2>Let’s find your <i style="color:#FF5A6E; font-weight:800"> ideal car</i></h2>
+          <h3>Location:</h3>
+          <input type="text" class="input" name="location" placeholder="Pick-up Location">
+          <h3>Pick-up Date:</h3>
+            <div class="formrow">
+              <div class="input-group date" >
+                <input type="date" 
+                class="form-control" 
+                #StartDate="ngModel" 
+                name="startDate"  
+                [(ngModel)]="startDate" 
+                placeholder="StartDate" required>
+                <span class="input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i> </span>
+               </div>
+               <h3>Drop-Off Date:</h3>
+                <div class="formrow">
+                  <div class="input-group date" >
+                     <input type="date"class="form-control" #FinishDate="ngModel" name="finishDate"  [(ngModel)]="finishDate" placeholder="FinishDate" required> <span class="input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i> </span>
+                  </div>
+                </div>
+                
+          <button type="button" 
+          class="btn-search"
+          [routerLink]="'/car'"
+          >Search</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <app-content-homepage></app-content-homepage>
+
+  <app-footer></app-footer>

@@ -1,0 +1,42 @@
+.footer2{
+    background-color: #f0efef;
+    height: 70px;
+}
+.footer2 p{
+    color: #323a45;
+    text-transform: capitalize;
+    line-height: 40px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    margin: 20px 0;
+    letter-spacing: 1px;
+}
+.footer2 a{
+
+    color: #FF5A6E;
+}
+.footer2 a:hover{
+    text-decoration: none;
+    color: #FF5A6E;
+}
+.footer2 ul li{
+    list-style: none;
+    display: inline-block;
+    text-align: left;
+}
+.left{
+    text-align: right;
+}
+.left ul li{
+    margin:0px 10px;
+    
+   margin-top: 30px;
+}
+.left ul li a{
+    color: #666666;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}

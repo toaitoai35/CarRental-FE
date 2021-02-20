@@ -1,0 +1,33 @@
+
+
+<div class="card">
+    <div class="login1">
+        <h2>REGISTER</h2>
+        <div class="form-group">
+            <div class="row">
+              <input class="form-control"  name="FullName" aria-describedby="unHelp" 
+                 id="FullName"placeholder="Full Name" required>
+                 <small id="unHelp" class="form-text text-muted">We'll never share your details with anyone else.</small>
+                 <input class="form-control"  name="userName" aria-describedby="unHelp" 
+                 id="userName"placeholder="User Name" required>
+                 <input  class="form-control" type="password" id="password" 
+                autocomplete="new-password" minlength="4" placeholder="Password" required>
+                <input  class="form-control" type="password" id="confirmPassword" 
+                autocomplete="confirm-Password" minlength="4" placeholder="Confirm Password" required>   
+              </div>
+        </div>
+        
+
+     <div class="row">
+        <button  (click)="register()" 
+        class="btn-submit" 
+        type="submit"
+        >REGISTER</button>
+     </div>
+    </div>
+</div>
+
+<app-footer></app-footer>
+
+
+

@@ -1,0 +1,74 @@
+.banner {
+    max-width: 100%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.247),rgba(0, 0, 0, 0.247)), url(../../../assets/img/hero_2.jpg);
+    height: 50em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+ 
+}
+.banner-inner{
+    position:absolute;
+    top:55%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%)
+}
+.banner-inner h1{
+    font-size: 60px;
+    font-weight: normal;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.site-section {
+    padding: 2.5em 0; }
+    @media (min-width: 768px) {
+      .site-section {
+        padding: 5em 0; } }
+    .site-section.site-section-sm {
+      padding: 4em 0; }
+  
+.bg-light {
+    background-color: #f6f5f5 !important;
+ }
+ .img-fluid{
+     margin-top: 20px;
+     height: 100%;
+     width:100%;
+ }
+ @media (max-width: 991.98px) {
+    .img-md-fluid {
+      max-width: 100%; } }
+ .item-1 .item-1-contents {
+    padding: 20px;
+    background: #fff; }
+    .item-1 .item-1-contents h3 {
+      font-size: 18px; }
+    .item-1 .item-1-contents .rent-price > span {
+      font-size: 1.7rem; }
+    .item-1 .item-1-contents ul {
+      list-style: none;
+      padding: 0;
+      margin: 0; }
+      .item-1 .item-1-contents ul li {
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #efefef;
+        display: block;
+        position: relative; }
+        .item-1 .item-1-contents ul li .spec {
+          position: absolute;
+          right: 0; }
+        .item-1 .item-1-contents ul li:last-child {
+          border-bottom: none; }
+    .item-1 .item-1-contents .action {
+      margin-top: 20px; }
+
+.page{
+
+    line-height: 5;
+
+    text-align: center;
+}
