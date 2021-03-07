@@ -1,0 +1,56 @@
+
+<!-- <div class="banner">
+  <div class="banner-inner">
+      <h1>Welcome to Admin Page!</h1>
+  </div>
+</div> -->
+<div class="navbar navbar-fixed-left">
+  
+  <ul class="nav navbar-nav">
+   <li><a href="#">Add & Search Car</a></li>
+   <li><a href="#">Add & Search Car Type</a></li>
+   <li><a href="#">List User Booking</a></li>
+   <li><a href="#">Add Update User</a></li>
+  </ul>
+</div>
+<div class="right-side">
+<div class="container">
+ <div class="row">
+   <h2>Welcome to Admin Page!</h2>
+   <div class="container">
+   <div class="row">
+  <div class="col-md-10 table-scrolling"> 
+      <table class="table table-sm table-hover">
+      
+              <tr>
+                  <th scope="col">BranchID</th>
+                  <th scope="col">Branch Name</th>
+                  <th scope="col">Address</th>
+                  <th scope="col">Latitude</th>
+                  <th scope="col">Longtitude</th>
+                  <th>Edit</th>
+              </tr>
+       
+         
+            <tr >
+              <td>branchID</td><td>name</td><td>address</td>
+              <td>ranch</td><td>branch</td>
+              <td>
+                <a class="btn" (click)="showForEdit(branch)">
+                  <i class="fa fa-pencil-square-o"></i>
+                </a>
+                <a class="btn text-danger" (click)="onDelete(branch.branchID)">
+                  <i class="fa fa-trash-o"></i>
+                </a>
+              </td>
+            </tr>
+          
+          </table>
+             
+  </div>
+</div>
+</div>
+ </div>
+</div>
+</div>
+

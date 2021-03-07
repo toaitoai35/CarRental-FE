@@ -1,0 +1,102 @@
+nav {
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    background: #ffffff;
+    top: 0;
+    transition: 0.9;
+    z-index: 99;
+}
+
+#logo {
+    margin-top: 25px;
+    margin-left: 60px;
+    transition: 0.4s;
+    height: 60%;
+    
+}
+
+nav ul {
+    display: inline-flex;
+    list-style: none;
+    padding: 0px 10px;
+    margin-top: 40px;
+    margin-right: 20px;
+    float: right;
+}
+#home{
+    color: #FF5A6E;
+}
+nav ul a:hover {
+    cursor: pointer;
+    color: #FF5A6E;
+    text-decoration: none;
+}
+
+nav ul a {
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    color: #333333;
+    margin-left: 180px;
+    font-family: 'Poppins', sans-serif;
+}
+nav ul a hr{
+    display: none;
+}
+nav ul li {
+    padding: 0px 5px;
+    position: relative;
+}
+
+nav ul li a {
+    margin: 0 10px;
+}
+
+.vertical-line {
+    display: inline-block;
+    border-left: 1px solid #ccc;
+    margin: 0 10px;
+    height: 30px;
+}
+
+.btn-login {
+    background: #fff;
+    color: #323A45;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.06em;
+    padding: 9px 25px;
+    border-radius: 30px;
+    border: 1px solid #dbdada;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    width: 250px;
+    height: 350px;
+    border-style: solid;
+    border-color: #e7e5e5da;
+    border-width: 1px;
+    border-radius: 4px;
+    background-color: #fff;
+    z-index: 1;
+    margin-top: 30px;
+    margin-left: 0px;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li {
+    padding: 10px 0px;
+}
+
+nav ul li ul li a {
+    font-weight: 500;
+    font-size: 13px;
+    color: #323A45;
+}

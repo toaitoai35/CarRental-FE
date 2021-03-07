@@ -19,13 +19,25 @@ import { CarPage3Component } from './car/car-page3/car-page3.component';
 import { CarPage4Component } from './car/car-page4/car-page4.component';
 import { ContactComponent } from './contact/contact.component';
 import { BookingComponent } from './booking/booking.component';
-import { AboutComponent } from './about/about.component';
+
 import { CarDetailComponent } from './car-detail/car-detail.component';
-import { AdminComponent } from './admin/admin.component';
+
 import { LoginComponent } from './account/login/login.component';
+import { EditCarComponent } from './admin/car/edit-car/edit-car.component';
+import { AddCarComponent } from './admin/car/add-car/add-car.component';
+import { DashboardAdminComponent } from './admin/dashboard-admin/dashboard-admin.component';
+import { ListCarComponent } from './admin/car/list-car/list-car.component';
+
+
 
 
 const appRoutes : Routes = [
+  { path:'admin',
+   component: DashboardAdminComponent,
+  children: [
+    { path:'car', 
+    component: ListCarComponent}
+  ]},
   { path:'', component: HomeComponent},
   { path:'login', component: LoginComponent},
   { path:'register', component: RegisterComponent},
@@ -43,8 +55,9 @@ const appRoutes : Routes = [
     { path:'car/car-page3', component: CarPage3Component},
     { path:'car/car-page4', component: CarPage4Component},
     { path:'contact', component: ContactComponent},
-    { path:'about', component: AboutComponent},
+
     { path:'car-detail', component: CarDetailComponent},
+    { path:'booking', component: BookingComponent},
 ];
 @NgModule({
   declarations: [
@@ -62,9 +75,13 @@ const appRoutes : Routes = [
     CarPage4Component,
     ContactComponent,
     BookingComponent,
-    AboutComponent,
     CarDetailComponent,
-    AdminComponent
+    EditCarComponent,
+    AddCarComponent,
+    DashboardAdminComponent,
+    ListCarComponent,
+
+ 
   ],
   
   imports: [

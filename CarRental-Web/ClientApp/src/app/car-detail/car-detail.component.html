@@ -42,7 +42,10 @@
                 <div class="m-bot15"> <strong>Price : </strong> <span class="amount-old">$300</span>  <span class="pro-price"> $250/1day</span></div>
   
                 <p>
-                    <button class="btn btn-round btn-danger" type="button"><i class="fa fa-shopping-cart"></i> Booking Now</button>
+                    <button class="btn btn-round btn-danger" 
+                    type="button"
+                    [routerLink]="'/booking'" 
+                    mat-button (click)="openDialog()"><i class="fa fa-shopping-cart"></i> Booking Now</button>
                 </p>
             </div>
         </div>
