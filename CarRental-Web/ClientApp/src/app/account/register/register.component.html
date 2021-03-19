@@ -13,7 +13,16 @@
                  <input  class="form-control" type="password" id="password" 
                 autocomplete="new-password" minlength="4" placeholder="Password" required>
                 <input  class="form-control" type="password" id="confirmPassword" 
-                autocomplete="confirm-Password" minlength="4" placeholder="Confirm Password" required>   
+                autocomplete="confirm-Password" minlength="4" placeholder="Confirm Password" required>
+                <select class="form-control">
+                  <option>Male</option>
+                  <option>Female</option>
+                </select>
+                <input type="date"class="form-control" 
+										#FinishDate="ngModel" 
+										name="finishDate"  
+										[(ngModel)]="finishDate" 
+										placeholder="FinishDate" required>    
               </div>
         </div>
         
