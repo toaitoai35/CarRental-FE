@@ -1,3 +1,81 @@
-<p>
-  add-car works!
-</p>
+<div class="navbar navbar-fixed-left">
+  
+  <ul class="nav navbar-nav">
+    <li><a [routerLink]="'/add-car'">Add & Search Car</a></li>
+    <li><a [routerLink]="'/car-list'">List User Booking</a></li>
+    <li><a [routerLink]="'/view'">Add Update User</a></li>
+  </ul>
+</div>
+<div class="right-side">
+<div class="site-section site-section-sm">
+
+  <div class="container">
+      <div class="row">
+          <div class="col-md-6 mx-auto text-center mb-5 section-heading">
+              <h2 class="mb-5" style="margin-left:90px">Add New Car</h2>
+          </div>
+      </div>
+
+    
+
+      <div class="row" style="margin-left: 220px">     		 
+          <div class="col-md-12 col-lg-8 mb-5">
+              <form action="AdminController" method="POST" class="p-5 bg-white">
+                      
+                  <div class="row form-group">
+                      <div class="col-md-12 mb-3 mb-md-0">
+                          <label class="font-weight-bold" for="images">Image</label>
+                          <input input type="file" name="txtImageLink" value="" class="form-control">
+                      </div>
+                  </div>
+               
+
+                  <div class="row form-group">
+                      <div class="col-md-12 mb-3 mb-md-0">
+                          <label class="font-weight-bold" for="productId">Product ID</label>
+                          <input type="text" name="txtProductId"class="form-control" placeholder="Product ID" autocomplete="off">
+                      </div>
+                  </div>
+             
+
+                  <div class="row form-group">
+                      <div class="col-md-12 mb-3 mb-md-0">
+                          <label class="font-weight-bold" for="productName">Product Name</label>
+                          <input type="text" name="txtProductName" class="form-control" placeholder="Product Name" autocomplete="off">
+                      </div>
+                  </div>
+                                           
+
+                  <div class="row form-group">
+                      <div class="col-md-12 mb-3 mb-md-0">
+                          <label class="font-weight-bold" for="description">Description</label>
+                          <input type="text" name="txtDescription"  class="form-control" placeholder="Description" autocomplete="off">
+                      </div>
+                  </div>   
+                  
+
+                  <div class="row form-group">
+                      <div class="col-md-12 mb-3 mb-md-0">
+                          <label class="font-weight-bold" for="price">Price</label>
+                          <input type="text" name="txtPrice" class="form-control" placeholder="Price" autocomplete="off">
+                      </div>
+                  </div>   
+                 
+
+                  
+
+                  
+                  <br/>  
+
+                  <div class="row form-group">
+                    <div class="col-md-12">
+                        <input type="submit" name="action" value="Add New Car" class="btn btn-outline-primary" style="margin-left: 200px;">
+                    </div>
+                </div>
+                  
+              </form>      
+          </div>
+      </div>                
+  </div>
+</div>
+</div>

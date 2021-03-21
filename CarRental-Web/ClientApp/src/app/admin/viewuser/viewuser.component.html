@@ -1,0 +1,62 @@
+<div class="navbar navbar-fixed-left">
+
+  <ul class="nav navbar-nav">
+    <li><a [routerLink]="'/add-car'">Add & Search Car</a></li>
+    <li><a [routerLink]="'/car-list'">List User Booking</a></li>
+    <li><a [routerLink]="'/view'">Add Update User</a></li>
+  </ul>
+</div>
+<div class="right-side">
+  <div class="col-md-10 table-scrolling">
+    <table class="table table-sm table-hover" style="margin-top:150px">
+
+      <tr>
+        <th>#NO.</th>
+        <th>Customer Name</th>
+        <th>Gender</th>
+        <th>Date of birth</th>
+        <th>Email</th>
+        <th>Phone Number</th>
+        <th>Address</th>
+        <th>Delete</th>
+      </tr>
+
+
+      <tr>
+        <td>1</td>
+        <td>phuc</td>
+        <td>male</td>
+        <td>20/02/1998</td>
+        <td>av@gmail.com</td>
+        <td>099823823</td>
+        <td>3/2, quan 10</td>
+        <td>
+          <a class="btn" (click)="showForEdit(branch)">
+            <i class="fa fa-pencil-square-o"></i>
+          </a>
+          <a class="btn text-danger" (click)="onDelete(branch.branchID)">
+            <i class="fa fa-trash-o"></i>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Loc</td>
+        <td>male</td>
+        <td>30/02/1988</td>
+        <td>assv@gmail.com</td>
+        <td>0998ss23823</td>
+        <td>CMT8, quan 10</td>
+        <td>
+          <a class="btn" (click)="showForEdit(branch)">
+            <i class="fa fa-pencil-square-o"></i>
+          </a>
+          <a class="btn text-danger" (click)="onDelete(branch.branchID)">
+            <i class="fa fa-trash-o"></i>
+          </a>
+        </td>
+      </tr>
+    </table>
+
+  </div>
+</div>

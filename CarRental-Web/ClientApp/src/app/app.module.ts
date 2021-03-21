@@ -27,6 +27,7 @@ import { EditCarComponent } from './admin/car/edit-car/edit-car.component';
 import { AddCarComponent } from './admin/car/add-car/add-car.component';
 import { DashboardAdminComponent } from './admin/dashboard-admin/dashboard-admin.component';
 import { ListCarComponent } from './admin/car/list-car/list-car.component';
+import { ViewuserComponent } from './admin/viewuser/viewuser.component';
 
 
 
@@ -58,6 +59,9 @@ const appRoutes : Routes = [
 
     { path:'car-detail', component: CarDetailComponent},
     { path:'booking', component: BookingComponent},
+    { path:'add-car', component: AddCarComponent},
+    { path:'car-list', component: ListCarComponent},
+    { path:'view', component: ViewuserComponent},
 ];
 @NgModule({
   declarations: [
@@ -80,6 +84,7 @@ const appRoutes : Routes = [
     AddCarComponent,
     DashboardAdminComponent,
     ListCarComponent,
+    ViewuserComponent,
 
  
   ],

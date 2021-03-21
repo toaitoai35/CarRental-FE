@@ -1,3 +1,46 @@
-<p>
-  list-car works!
-</p>
+<div class="navbar navbar-fixed-left">
+  
+  <ul class="nav navbar-nav">
+    <li><a [routerLink]="'/add-car'">Add & Search Car</a></li>
+    <li><a [routerLink]="'/car-list'">List User Booking</a></li>
+    <li><a [routerLink]="'/view'">Add Update User</a></li>
+  </ul>
+</div>
+<div class="right-side">
+<div class="col-md-10 table-scrolling"> 
+      <table class="table table-sm table-hover" style="margin-top:120px">
+      
+              <tr>
+                  <th scope="col">UserID</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">CarID</th>
+                  <th scope="col">Total Day Rental</th>
+                  <th scope="col">Total Money</th>
+                 <th></th>
+              </tr>
+       
+         
+            <tr >
+              <td>A12</td><td>Loc</td><td>Car11</td>
+              <td>2days<td><td>300$</td>
+              <td>
+                
+                <a class="btn text-danger" (click)="onDelete(branch.branchID)">
+                  <i class="fa fa-trash-o"></i>
+                </a>
+              </td>
+            </tr>
+            <tr >
+              <td>A13</td><td>Phuc</td><td>Car1</td>
+              <td>5days<td><td>600$</td>
+              <td>
+                
+                <a class="btn text-danger" (click)="onDelete(branch.branchID)">
+                  <i class="fa fa-trash-o"></i>
+                </a>
+              </td>
+            </tr>
+          </table>
+             
+  </div>
+</div>

@@ -7,10 +7,9 @@
 <div class="navbar navbar-fixed-left">
   
   <ul class="nav navbar-nav">
-   <li><a href="#">Add & Search Car</a></li>
-   <li><a href="#">Add & Search Car Type</a></li>
-   <li><a href="#">List User Booking</a></li>
-   <li><a href="#">Add Update User</a></li>
+   <li><a [routerLink]="'/add-car'">Add & Search Car</a></li>
+   <li><a [routerLink]="'/car-list'">List User Booking</a></li>
+   <li><a [routerLink]="'/view'">Add Update User</a></li>
   </ul>
 </div>
 <div class="right-side">
@@ -23,18 +22,19 @@
       <table class="table table-sm table-hover">
       
               <tr>
-                  <th scope="col">BranchID</th>
-                  <th scope="col">Branch Name</th>
-                  <th scope="col">Address</th>
-                  <th scope="col">Latitude</th>
-                  <th scope="col">Longtitude</th>
+                <th>Car ID</th>
+               
+                <th>Car Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Car Type</th>
                   <th>Edit</th>
               </tr>
        
          
             <tr >
-              <td>branchID</td><td>name</td><td>address</td>
-              <td>ranch</td><td>branch</td>
+              <td>Car11</td><td>Toyota</td><td>Toyota Avanza.</td>
+              <td>100$</td><td>Toyota</td>
               <td>
                 <a class="btn" (click)="showForEdit(branch)">
                   <i class="fa fa-pencil-square-o"></i>
@@ -44,7 +44,18 @@
                 </a>
               </td>
             </tr>
-          
+            <tr >
+              <td>Car21</td><td>Range Rover</td><td>TRange Rover S64 Coupe.</td>
+              <td>250$</td><td>Range Rover </td>
+              <td>
+                <a class="btn" (click)="showForEdit(branch)">
+                  <i class="fa fa-pencil-square-o"></i>
+                </a>
+                <a class="btn text-danger" (click)="onDelete(branch.branchID)">
+                  <i class="fa fa-trash-o"></i>
+                </a>
+              </td>
+            </tr>
           </table>
              
   </div>
